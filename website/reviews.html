@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peculiar Pages - Reviews</title>
+    <link rel="stylesheet" href="style-reviews.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="books.html">Books</a></li>
+            <li><a href="reviews.html" class="active">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Book Reviews</h1>
+        <p>Discover what our readers think about their favorite books</p>
+    </header>
+
+    <main>
+        <div class="filter-section">
+            <div class="filter-group">
+                <label for="sort">Sort by:</label>
+                <select id="sort">
+                    <option value="recent">Most Recent</option>
+                    <option value="rating">Highest Rating</option>
+                    <option value="popular">Most Popular</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="genre">Genre:</label>
+                <select id="genre">
+                    <option value="all">All Genres</option>
+                    <option value="fiction">Fiction</option>
+                    <option value="non-fiction">Non-Fiction</option>
+                    <option value="business">Business</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="reviews-container">
+            <!-- Review Card 1 -->
+            <article class="review-card">
+                <div class="review-header">
+                    <img src="https://i.pravatar.cc/150?img=1" alt="Reviewer Avatar" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <h3>Sarah Johnson</h3>
+                        <span class="review-date">March 15, 2024</span>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">An absolutely transformative read! The principles outlined in this book have already made a significant impact on my daily routines and habits.</p>
+                <div class="book-info">
+                    <img src="https://i.pinimg.com/736x/20/d1/a6/20d1a65703a999cd0b39f87d7bb41c1d.jpg" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>Atomic Habits</h4>
+                        <span class="book-author">James Clear</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Review Card 2 -->
+            <article class="review-card">
+                <div class="review-header">
+                    <img src="https://i.pravatar.cc/150?img=2" alt="Reviewer Avatar" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <h3>Michael Chen</h3>
+                        <span class="review-date">March 14, 2024</span>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <p class="review-text">A fascinating look into the psychology behind our financial decisions. This book changed how I think about money and success.</p>
+                <div class="book-info">
+                    <img src="https://i.pinimg.com/736x/1b/fa/67/1bfa67a4e041361ff1fb8ed0436e0717.jpg" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>The Psychology of Money</h4>
+                        <span class="book-author">Morgan Housel</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Review Card 3 -->
+            <article class="review-card">
+                <div class="review-header">
+                    <img src="https://i.pravatar.cc/150?img=3" alt="Reviewer Avatar" class="reviewer-avatar">
+                    <div class="reviewer-info">
+                        <h3>Priya Patel</h3>
+                        <span class="review-date">March 13, 2024</span>
+                    </div>
+                </div>
+                <div class="star-rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <p class="review-text">An inspiring journey through the life of a visionary businessman. The leadership lessons are timeless and incredibly relevant today.</p>
+                <div class="book-info">
+                    <img src="https://i.pinimg.com/736x/eb/98/85/eb9885a478e6e45bb9156bc918353218.jpg" alt="Book Cover" class="book-cover">
+                    <div class="book-details">
+                        <h4>Jamsetji Tata</h4>
+                        <span class="book-author">R. Gopalkrishnan and Harish Bhat</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+
+        <!-- Review Form -->
+        <div class="review-form-container">
+            <h2>Write a Review</h2>
+            <form action="#" method="POST">
+                <div class="rating-select">
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <div class="form-group">
+                    <label for="book-select">Select Book</label>
+                    <select id="book-select" name="book" required>
+                        <option value="">Choose a book...</option>
+                        <option value="atomic-habits">Atomic Habits</option>
+                        <option value="psychology-money">The Psychology of Money</option>
+                        <option value="jamsetji-tata">Jamsetji Tata</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="review-text">Your Review</label>
+                    <textarea id="review-text" name="review" required></textarea>
+                </div>
+                <button type="submit" class="submit-review-btn">Submit Review</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Peculiar Pages. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Star rating functionality
+        document.querySelectorAll('.rating-select i').forEach((star, index) => {
+            star.addEventListener('click', () => {
+                document.querySelectorAll('.rating-select i').forEach((s, i) => {
+                    if (i <= index) {
+                        s.classList.remove('far');
+                        s.classList.add('fas');
+                    } else {
+                        s.classList.remove('fas');
+                        s.classList.add('far');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
